@@ -15,9 +15,9 @@ while(cap.isOpened()):
         print(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
         print(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-        gray=cv2.cvtColor(frame, cv2.COLOR_BGRA2GRAY)
+        
 
-        cv2.imshow('framw',gray)
+        cv2.imshow('framw',frame)
         out.write(frame)
 
         # 20 saniye sonra videoyu kaydetmeyi durdur
